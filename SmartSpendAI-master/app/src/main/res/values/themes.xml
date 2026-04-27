@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SmartSpendAI" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/smart_primary</item>
+        <item name="colorPrimaryDark">@color/smart_primary_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/smart_accent</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">@color/smart_background</item>
+    </style>
+
+    <style name="Theme.SmartSpendAI" parent="Base.Theme.SmartSpendAI" />
+</resources>

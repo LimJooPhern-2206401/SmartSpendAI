@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/registerRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/smart_background">
+
+    <View
+        android:layout_width="260dp"
+        android:layout_height="260dp"
+        android:layout_gravity="bottom|start"
+        android:layout_marginStart="-120dp"
+        android:layout_marginBottom="-110dp"
+        android:alpha="0.45"
+        android:background="@drawable/bg_auth_orb_left" />
+
+    <View
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="-130dp"
+        android:layout_marginBottom="-125dp"
+        android:alpha="0.45"
+        android:background="@drawable/bg_auth_orb_right" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingTop="28dp"
+            android:paddingEnd="24dp"
+            android:paddingBottom="24dp">
+
+            <ImageView
+                android:layout_width="168dp"
+                android:layout_height="168dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@drawable/smartspend_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/create_account"
+                android:textColor="@color/smart_primary_dark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/register_welcome_subtitle"
+                android:textColor="@color/smart_text_secondary"
+                android:textSize="16sp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:cardBackgroundColor="@color/smart_surface"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="6dp"
+                app:strokeColor="@color/smart_outline"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_welcome_title"
+                        android:textColor="@color/smart_text_primary"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="Set your details once and start managing your money with confidence."
+                        android:textColor="@color/smart_text_secondary"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="22dp"
+                        android:hint="@string/full_name"
+                        app:boxBackgroundMode="filled"
+                        app:boxBackgroundColor="@color/smart_surface"
+                        app:boxCornerRadiusBottomEnd="14dp"
+                        app:boxCornerRadiusBottomStart="14dp"
+                        app:boxCornerRadiusTopEnd="14dp"
+                        app:boxCornerRadiusTopStart="14dp"
+                        app:boxStrokeColor="@color/smart_outline"
+                        app:hintTextColor="@color/smart_text_secondary"
+                        app:startIconDrawable="@drawable/ic_auth_email"
+                        app:startIconTint="@color/smart_primary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/registerNameEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPersonName"
+                            android:textColor="@color/smart_text_primary"
+                            android:textColorHint="@color/smart_text_secondary"
+                            android:singleLine="true" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:hint="@string/email"
+                        app:boxBackgroundMode="filled"
+                        app:boxBackgroundColor="@color/smart_surface"
+                        app:boxCornerRadiusBottomEnd="14dp"
+                        app:boxCornerRadiusBottomStart="14dp"
+                        app:boxCornerRadiusTopEnd="14dp"
+                        app:boxCornerRadiusTopStart="14dp"
+                        app:boxStrokeColor="@color/smart_outline"
+                        app:hintTextColor="@color/smart_text_secondary"
+                        app:startIconDrawable="@drawable/ic_auth_email"
+                        app:startIconTint="@color/smart_primary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/registerEmailEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textEmailAddress"
+                            android:textColor="@color/smart_text_primary"
+                            android:textColorHint="@color/smart_text_secondary"
+                            android:singleLine="true" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:hint="@string/password"
+                        app:boxBackgroundMode="filled"
+                        app:boxBackgroundColor="@color/smart_surface"
+                        app:boxCornerRadiusBottomEnd="14dp"
+                        app:boxCornerRadiusBottomStart="14dp"
+                        app:boxCornerRadiusTopEnd="14dp"
+                        app:boxCornerRadiusTopStart="14dp"
+                        app:boxStrokeColor="@color/smart_outline"
+                        app:endIconMode="password_toggle"
+                        app:hintTextColor="@color/smart_text_secondary"
+                        app:startIconDrawable="@drawable/ic_auth_lock"
+                        app:startIconTint="@color/smart_primary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/registerPasswordEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:textColor="@color/smart_text_primary"
+                            android:textColorHint="@color/smart_text_secondary"
+                            android:singleLine="true" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:hint="@string/confirm_password"
+                        app:boxBackgroundMode="filled"
+                        app:boxBackgroundColor="@color/smart_surface"
+                        app:boxCornerRadiusBottomEnd="14dp"
+                        app:boxCornerRadiusBottomStart="14dp"
+                        app:boxCornerRadiusTopEnd="14dp"
+                        app:boxCornerRadiusTopStart="14dp"
+                        app:boxStrokeColor="@color/smart_outline"
+                        app:endIconMode="password_toggle"
+                        app:hintTextColor="@color/smart_text_secondary"
+                        app:startIconDrawable="@drawable/ic_auth_lock"
+                        app:startIconTint="@color/smart_primary">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/registerConfirmPasswordEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:textColor="@color/smart_text_primary"
+                            android:textColorHint="@color/smart_text_secondary"
+                            android:singleLine="true" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/registerButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/register"
+                        android:textAllCaps="false"
+                        android:textSize="18sp"
+                        app:cornerRadius="14dp"
+                        app:icon="@drawable/ic_auth_arrow"
+                        app:iconGravity="textEnd"
+                        app:iconPadding="14dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="18dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Already have an account?"
+                            android:textColor="@color/smart_text_secondary"
+                            android:textSize="15sp" />
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/openLoginButton"
+                            style="@style/Widget.Material3.Button.TextButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:insetTop="0dp"
+                            android:insetBottom="0dp"
+                            android:minWidth="0dp"
+                            android:paddingStart="6dp"
+                            android:paddingEnd="0dp"
+                            android:text="Login"
+                            android:textAllCaps="false"
+                            android:textColor="@color/smart_primary" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
